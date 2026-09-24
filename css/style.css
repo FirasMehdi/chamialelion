@@ -136,7 +136,7 @@ footer{background:#0c2036;color:#fff;padding:28px 0} .footerin{display:flex;just
 @media(max-width:600px){.container{width:min(100% - 26px,1380px)}nav{height:74px}.links.open{top:74px}.brand{min-width:0}.brand img{width:48px;height:48px}.brand b{font-size:25px}.brand small{font-size:9px}.hero{padding:100px 0 25px;min-height:auto}.hero h1{font-size:70px}.hero-visual{height:390px}.main-product{max-height:360px}.f1{width:85px;height:85px}.f2{width:68px;height:68px}.f3{width:100px;height:100px}.trust{width:calc(100% - 26px);padding:20px;grid-template-columns:1fr 1fr;gap:18px;border-radius:22px}.trust div{font-size:11px}.trust strong{font-size:18px}.section{padding:75px 0}.product-filters{grid-template-columns:1fr;padding:14px}.product-count{text-align:left}.grid{gap:12px}.product-card{padding:9px 7px 13px;border-radius:17px}.product-image{height:145px;margin-bottom:10px;padding:6px}.product-card h3{min-height:36px;font-size:18px;line-height:1.15;margin-bottom:5px}.product-card p{min-height:12px;font-size:9px;margin-bottom:8px}.chips{min-height:25px}.chips span{font-size:8px;padding:5px 7px}.story-copy{padding:34px 22px}.story-copy h2{font-size:34px}.langswitch{padding:3px}.lang-btn{padding:7px 10px;font-size:10px}}
 
 .product-image{height:205px}
-.product-image img{height:calc(100% + 10px);transform:translateY(-5px)}
+.product-image img{height:calc(100% + 10px);transform:translateY(-12px)}
 
 @media(max-width:600px){
 	.product-image{height:160px}
