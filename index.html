@@ -4,17 +4,71 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f4ead8">
-<title data-i18n="meta.title">Chamia le Lion - شامية الأسد</title>
-<link rel="icon" type="image/jpeg" href="images/logo-le-lion.jpg">
+<title data-i18n="meta.title">Halwa Chamia Le Lion | Tradition tunisienne depuis 1908</title>
+<meta name="description" data-i18n-content="meta.description" content="Découvrez la halwa chamia Le Lion, fabriquée en Tunisie depuis 1908. Recettes traditionnelles, plusieurs saveurs et formats pour particuliers et professionnels.">
+<link rel="canonical" href="https://chamia-le-lion.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Le Lion">
+<meta property="og:title" data-i18n-content="meta.title" content="Halwa Chamia Le Lion | Tradition tunisienne depuis 1908">
+<meta property="og:description" data-i18n-content="meta.description" content="Découvrez la halwa chamia Le Lion, fabriquée en Tunisie depuis 1908. Recettes traditionnelles, plusieurs saveurs et formats pour particuliers et professionnels.">
+<meta property="og:url" content="https://chamia-le-lion.com/">
+<meta property="og:image" content="https://chamia-le-lion.com/images/promo-kima.webp">
+<meta property="og:locale" content="fr_TN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" data-i18n-content="meta.title" content="Halwa Chamia Le Lion | Tradition tunisienne depuis 1908">
+<meta name="twitter:description" data-i18n-content="meta.description" content="Découvrez la halwa chamia Le Lion, fabriquée en Tunisie depuis 1908. Recettes traditionnelles, plusieurs saveurs et formats pour particuliers et professionnels.">
+<meta name="twitter:image" content="https://chamia-le-lion.com/images/promo-kima.webp">
+<link rel="icon" type="image/webp" href="images/logo-le-lion.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Cairo:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css?v=3">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://chamia-le-lion.com/#organization",
+      "name": "Le Lion",
+      "alternateName": ["Halwa Chamia Le Lion", "Manufacture Sotualco"],
+      "url": "https://chamia-le-lion.com/",
+      "logo": "https://chamia-le-lion.com/images/logo-le-lion.webp",
+      "foundingDate": "1908",
+      "email": "sotualco.chamiassad1908@gmail.com",
+      "telephone": "+21629150041",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Boumhel El Bassatine",
+        "postalCode": "2097",
+        "addressCountry": "TN"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://chamia-le-lion.com/#website",
+      "url": "https://chamia-le-lion.com/",
+      "name": "Le Lion — Halwa Chamia",
+      "publisher": { "@id": "https://chamia-le-lion.com/#organization" },
+      "inLanguage": ["fr", "en", "ar"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://chamia-le-lion.com/#webpage",
+      "url": "https://chamia-le-lion.com/",
+      "name": "Halwa Chamia Le Lion | Tradition tunisienne depuis 1908",
+      "isPartOf": { "@id": "https://chamia-le-lion.com/#website" },
+      "about": { "@id": "https://chamia-le-lion.com/#organization" },
+      "inLanguage": "fr-TN"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav><div class="container navin">
-  <a class="brand" href="#accueil"><img src="images/logo-le-lion.jpg" alt="Le Lion"><div><b data-i18n="brand.name">LE LION</b><small data-i18n="nav.brand.sub1">Manufacture Sotualco</small><small data-i18n="nav.brand.sub2">Tunisie · Est. 1908</small></div></a>
-  <div class="links">
+  <a class="brand" href="#accueil"><img src="images/logo-le-lion.webp" alt="Logo Le Lion, marque de halwa chamia tunisienne" width="62" height="62" decoding="async"><div><b data-i18n="brand.name">LE LION</b><small data-i18n="nav.brand.sub1">Manufacture Sotualco</small><small data-i18n="nav.brand.sub2">Tunisie · Est. 1908</small></div></a>
+  <div class="links" id="site-links">
     <a href="#accueil" data-i18n="nav.home">ACCUEIL</a>
     <a href="#histoire" data-i18n="nav.about">À PROPOS</a>
     <a href="#produits" data-i18n="nav.products">NOS PRODUITS</a>
@@ -27,13 +81,13 @@
     <button type="button" class="lang-btn" data-lang="en">EN</button>
     <button type="button" class="lang-btn" data-lang="ar">AR</button>
   </div>
-  <button class="menu" aria-label="Menu">☰</button>
+  <button class="menu" type="button" aria-label="Menu" data-i18n-aria-label="nav.menu" aria-expanded="false" aria-controls="site-links">☰</button>
 </div></nav>
 
 <header class="hero" id="accueil"><div class="container hero-grid">
   <div class="hero-copy"><div class="eyebrow" data-i18n="hero.eyebrow">Depuis 1908</div><h1><span data-i18n="hero.title.small">HALWA CHAMIA</span><strong data-i18n="brand.name">LE LION</strong><em>حلوى شامية</em></h1><p data-i18n="hero.desc">Le goût authentique d’une tradition tunisienne qui traverse le temps.</p><a class="cta" href="#produits"><span data-i18n="hero.cta">DÉCOUVRIR NOS PRODUITS</span> <b>›</b></a></div>
   <div class="hero-visual">
-    <img class="main-product" src="images/promo-kima.jpg" alt="Halwa Chamia Le Lion">
+    <img class="main-product" src="images/promo-kima.webp" alt="Boîte de halwa chamia Le Lion" width="595" height="336" fetchpriority="high" decoding="async">
   </div>
 </div>
 <div class="trust">
@@ -51,23 +105,23 @@
 </div>
 <p class="product-count" id="product-count" aria-live="polite"></p>
 <div class="grid" id="product-grid">
-<article class="product-card reveal" data-name="amande 400 g métallique" data-flavor="amande" data-packaging="metallic"><div class="product-image"><img src="images/amande_0.5kg_metallique.png" alt="Halwa Chamia Amande 400 g métallique"></div><h3>Amande · 400 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
-<article class="product-card reveal" data-name="amande 2 kg métallique" data-flavor="amande" data-packaging="metallic"><div class="product-image"><img src="images/amande_1.8kg.png" alt="Halwa Chamia Amande 2 kg métallique"></div><h3>Amande · 2 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
-<article class="product-card reveal" data-name="amande 185 g plastique" data-flavor="amande" data-packaging="plastic"><div class="product-image"><img src="images/amande_185g_plastique.png" alt="Halwa Chamia Amande 185 g plastique"></div><h3>Amande · 185 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
-<article class="product-card reveal" data-name="amande 2.25 kg plastique" data-flavor="amande" data-packaging="plastic"><div class="product-image"><img src="images/amande_2.25kg.png" alt="Halwa Chamia Amande 2,25 kg plastique"></div><h3>Amande · 2,25 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
-<article class="product-card reveal" data-name="amande 4.4 kg métallique" data-flavor="amande" data-packaging="metallic"><div class="product-image"><img src="images/amande_4.4kg_metallique.png" alt="Halwa Chamia Amande 4,4 kg métallique"></div><h3>Amande · 4,4 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
-<article class="product-card reveal" data-name="amande 4.4 kg plastique" data-flavor="amande" data-packaging="plastic"><div class="product-image"><img src="images/amande_4.4kg_plastique.png" alt="Halwa Chamia Amande 4,4 kg plastique"></div><h3>Amande · 4,4 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
-<article class="product-card reveal" data-name="fruits secs 850 g métallique" data-flavor="fruits-secs" data-packaging="metallic"><div class="product-image"><img src="images/fruits_secs_0.8kg_metallique.png" alt="Halwa Chamia Fruits secs 850 g métallique"></div><h3>Fruits secs · 850 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
-<article class="product-card reveal" data-name="fruits secs 2 kg métallique" data-flavor="fruits-secs" data-packaging="metallic"><div class="product-image"><img src="images/fruits_sec_1.8kg_metallique.png" alt="Halwa Chamia Fruits secs 2 kg métallique"></div><h3>Fruits secs · 2 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
-<article class="product-card reveal" data-name="nature 400 g métallique" data-flavor="nature" data-packaging="metallic"><div class="product-image"><img src="images/nature_0.5kg_metallique.png" alt="Halwa Chamia Nature 400 g métallique"></div><h3>Nature · 400 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
-<article class="product-card reveal" data-name="nature 2.25 kg plastique" data-flavor="nature" data-packaging="plastic"><div class="product-image"><img src="images/nature_2.25kg.png" alt="Halwa Chamia Nature 2,25 kg plastique"></div><h3>Nature · 2,25 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
-<article class="product-card reveal" data-name="nature 5 kg plastique" data-flavor="nature" data-packaging="plastic"><div class="product-image"><img src="images/nature_5kg_plastique.png" alt="Halwa Chamia Nature 5 kg plastique"></div><h3>Nature · 5 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
-<article class="product-card reveal" data-name="nature 90 g plastique" data-flavor="nature" data-packaging="plastic"><div class="product-image"><img src="images/nature_90g_plastique.png" alt="Halwa Chamia Nature 90 g plastique"></div><h3>Nature · 90 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
-<article class="product-card reveal" data-name="pistache 400 g métallique" data-flavor="pistache" data-packaging="metallic"><div class="product-image"><img src="images/pistache_0.5kg_metallique.png" alt="Halwa Chamia Pistache 400 g métallique"></div><h3>Pistache · 400 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
-<article class="product-card reveal" data-name="pistache 185 g plastique" data-flavor="pistache" data-packaging="plastic"><div class="product-image"><img src="images/pistache_185g_plastique.png" alt="Halwa Chamia Pistache 185 g plastique"></div><h3>Pistache · 185 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
+<article class="product-card reveal" data-name="amande 400 g métallique" data-flavor="amande" data-packaging="metallic"><div class="product-image"><img src="images/amande_0.5kg_metallique.webp" alt="Halwa chamia Le Lion à l’amande, boîte métallique 400 g" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Amande · 400 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
+<article class="product-card reveal" data-name="amande 2 kg métallique" data-flavor="amande" data-packaging="metallic"><div class="product-image"><img src="images/amande_1.8kg.webp" alt="Halwa chamia Le Lion à l’amande, boîte métallique 2 kg" width="500" height="500" loading="lazy" decoding="async"></div><h3>Amande · 2 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
+<article class="product-card reveal" data-name="amande 185 g plastique" data-flavor="amande" data-packaging="plastic"><div class="product-image"><img src="images/amande_185g_plastique.webp" alt="Halwa chamia Le Lion à l’amande, pot plastique 185 g" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Amande · 185 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
+<article class="product-card reveal" data-name="amande 2.25 kg plastique" data-flavor="amande" data-packaging="plastic"><div class="product-image"><img src="images/amande_2.25kg.webp" alt="Halwa chamia Le Lion à l’amande, boîte plastique 2,25 kg" width="1254" height="1254" loading="lazy" decoding="async"></div><h3>Amande · 2,25 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
+<article class="product-card reveal" data-name="amande 4.4 kg métallique" data-flavor="amande" data-packaging="metallic"><div class="product-image"><img src="images/amande_4.4kg_metallique.webp" alt="Halwa chamia Le Lion à l’amande, boîte métallique 4,4 kg" width="1254" height="1254" loading="lazy" decoding="async"></div><h3>Amande · 4,4 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
+<article class="product-card reveal" data-name="amande 4.4 kg plastique" data-flavor="amande" data-packaging="plastic"><div class="product-image"><img src="images/amande_4.4kg_plastique.webp" alt="Halwa chamia Le Lion à l’amande, boîte plastique 4,4 kg" width="1254" height="1254" loading="lazy" decoding="async"></div><h3>Amande · 4,4 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
+<article class="product-card reveal" data-name="fruits secs 850 g métallique" data-flavor="fruits-secs" data-packaging="metallic"><div class="product-image"><img src="images/fruits_secs_0.8kg_metallique.webp" alt="Halwa chamia Le Lion aux fruits secs, boîte métallique 850 g" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Fruits secs · 850 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
+<article class="product-card reveal" data-name="fruits secs 2 kg métallique" data-flavor="fruits-secs" data-packaging="metallic"><div class="product-image"><img src="images/fruits_sec_1.8kg_metallique.webp" alt="Halwa chamia Le Lion aux fruits secs, boîte métallique 2 kg" width="500" height="500" loading="lazy" decoding="async"></div><h3>Fruits secs · 2 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
+<article class="product-card reveal" data-name="nature 400 g métallique" data-flavor="nature" data-packaging="metallic"><div class="product-image"><img src="images/nature_0.5kg_metallique.webp" alt="Halwa chamia Le Lion nature, boîte métallique 400 g" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Nature · 400 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
+<article class="product-card reveal" data-name="nature 2.25 kg plastique" data-flavor="nature" data-packaging="plastic"><div class="product-image"><img src="images/nature_2.25kg.webp" alt="Halwa chamia Le Lion nature, boîte plastique 2,25 kg" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Nature · 2,25 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
+<article class="product-card reveal" data-name="nature 5 kg plastique" data-flavor="nature" data-packaging="plastic"><div class="product-image"><img src="images/nature_5kg_plastique.webp" alt="Halwa chamia Le Lion nature, boîte plastique 5 kg" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Nature · 5 kg</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
+<article class="product-card reveal" data-name="nature 90 g plastique" data-flavor="nature" data-packaging="plastic"><div class="product-image"><img src="images/nature_90g_plastique.webp" alt="Halwa chamia Le Lion nature, pot plastique 90 g" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Nature · 90 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
+<article class="product-card reveal" data-name="pistache 400 g métallique" data-flavor="pistache" data-packaging="metallic"><div class="product-image"><img src="images/pistache_0.5kg_metallique.webp" alt="Halwa chamia Le Lion à la pistache, boîte métallique 400 g" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Pistache · 400 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.metallic">Métallique</span></div></article>
+<article class="product-card reveal" data-name="pistache 185 g plastique" data-flavor="pistache" data-packaging="plastic"><div class="product-image"><img src="images/pistache_185g_plastique.webp" alt="Halwa chamia Le Lion à la pistache, pot plastique 185 g" width="1024" height="1024" loading="lazy" decoding="async"></div><h3>Pistache · 185 g</h3><p data-i18n="products.available">Disponible en</p><div class="chips"><span data-i18n="products.packaging.plastic">Plastique</span></div></article>
 </div><p class="no-products" id="no-products" data-i18n="products.empty" hidden>Aucun produit ne correspond à votre recherche.</p></div></section>
 
-<section class="story section" id="histoire"><div class="container"><div class="story-card reveal"><img src="images/promo-ramadan.jpg" alt="Halwa Chamia Le Lion"><div class="story-copy"><div class="eyebrow" data-i18n="story.eyebrow">Le goût authentique</div><h2 data-i18n="story.title">Une histoire qui traverse le temps</h2><p data-i18n="story.desc">Une recette traditionnelle, un savoir-faire transmis avec passion et des ingrédients soigneusement sélectionnés.</p><div class="heritage" data-i18n="story.heritage">Manufacture Sotualco<br><small style="font:12px Montserrat;letter-spacing:2px" data-i18n="story.heritage.sub">TUNISIE · EST. 1908</small></div><a class="cta" href="#contact" style="align-self:center"><span data-i18n="story.cta">EN SAVOIR PLUS</span> <b>›</b></a></div></div></div></section>
+<section class="story section" id="histoire"><div class="container"><div class="story-card reveal"><img src="images/promo-ramadan.webp" alt="Assortiment de halwa chamia Le Lion pour les fêtes" loading="lazy" decoding="async"><div class="story-copy"><div class="eyebrow" data-i18n="story.eyebrow">Le goût authentique</div><h2 data-i18n="story.title">Une histoire qui traverse le temps</h2><p data-i18n="story.desc">Une recette traditionnelle, un savoir-faire transmis avec passion et des ingrédients soigneusement sélectionnés.</p><div class="heritage" data-i18n="story.heritage">Manufacture Sotualco<br><small style="font:12px Montserrat;letter-spacing:2px" data-i18n="story.heritage.sub">TUNISIE · EST. 1908</small></div><a class="cta" href="#produits" style="align-self:center"><span data-i18n="story.cta">EN SAVOIR PLUS</span> <b>›</b></a></div></div></div></section>
 
 <section class="section" id="savoir"><div class="container"><div class="section-title"><span data-i18n="quality.eyebrow">NOTRE PROMESSE</span><h2 data-i18n="quality.title">Qualité, tradition et passion</h2></div><div class="quality-grid reveal">
 <div class="product-card"><h3 data-i18n="quality.1.title">Ingrédients</h3><p style="font-size:13px;line-height:1.7" data-i18n="quality.1.desc">Une sélection pensée pour préserver le goût authentique.</p></div>
@@ -190,6 +244,12 @@
 
 <footer><div class="container footerin">
   <span data-i18n="footer.1">Qualité artisanale</span><span data-i18n="footer.2">Recettes traditionnelles</span><span data-i18n="footer.3">Sans conservateurs</span><span data-i18n="footer.4">Fabrication en Tunisie</span>
+  <div class="footer-links" role="navigation" aria-label="Navigation de pied de page">
+    <a href="#produits" data-i18n="footer.products">Produits</a>
+    <a href="#histoire" data-i18n="footer.story">Notre histoire</a>
+    <a href="#savoir" data-i18n="footer.quality">Qualité</a>
+    <a href="#contact" data-i18n="footer.contact">Contact</a>
+  </div>
 </div>
 </footer>
 <script src="js/script.js?v=4"></script>

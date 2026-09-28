@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "http://chamia-le-lion.com/*"
+  to = "https://chamia-le-lion.com/:splat"
+  status = 301
+  force = true

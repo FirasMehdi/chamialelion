@@ -3,20 +3,38 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.targe
 document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 
 /* ---------- Mobile menu ---------- */
-document.querySelector('.menu').onclick=()=>{document.querySelector('.links').classList.toggle('open')};
+const menuButton = document.querySelector('.menu');
+const navLinks = document.querySelector('.links');
+menuButton.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+});
 document.querySelectorAll('.links a').forEach(link => {
-  link.addEventListener('click', () => document.querySelector('.links').classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+  });
 });
 
 /* ---------- i18n ---------- */
 const translations = {
-  "meta.title": { fr: "Chamia le Lion - شامية الأسد", en: "Chamia le Lion - شامية الأسد", ar: "Chamia le Lion - شامية الأسد" },
+  "meta.title": {
+    fr: "Halwa Chamia Le Lion | Tradition tunisienne depuis 1908",
+    en: "Le Lion Halwa Chamia | Tunisian tradition since 1908",
+    ar: "حلوى شامية الأسد | تراث تونسي منذ 1908"
+  },
+  "meta.description": {
+    fr: "Découvrez la halwa chamia Le Lion, fabriquée en Tunisie depuis 1908. Recettes traditionnelles, plusieurs saveurs et formats pour particuliers et professionnels.",
+    en: "Discover Le Lion halwa chamia, made in Tunisia since 1908. Traditional recipes, a choice of flavours and sizes for consumers and businesses.",
+    ar: "اكتشف حلوى شامية الأسد المصنوعة في تونس منذ عام 1908. وصفات تقليدية ونكهات وأحجام متنوعة للأفراد والشركات."
+  },
 
   "brand.name": { fr: "LE LION", en: "THE LION", ar: "الأسد" },
 
   "nav.brand.sub1": { fr: "Manufacture Sotualco", en: "Sotualco Manufacture", ar: "مصنع سوتوالكو" },
   "nav.brand.sub2": { fr: "Tunisie · Est. 1908", en: "Tunisia · Est. 1908", ar: "تونس · تأسست 1908" },
   "nav.home": { fr: "ACCUEIL", en: "HOME", ar: "الرئيسية" },
+  "nav.menu": { fr: "Ouvrir le menu", en: "Open menu", ar: "فتح القائمة" },
   "nav.about": { fr: "À PROPOS", en: "ABOUT", ar: "من نحن" },
   "nav.products": { fr: "NOS PRODUITS", en: "OUR PRODUCTS", ar: "منتجاتنا" },
   "nav.quality": { fr: "QUALITÉ", en: "QUALITY", ar: "الجودة" },
@@ -135,7 +153,11 @@ const translations = {
   "footer.1": { fr: "Qualité artisanale", en: "Artisanal quality", ar: "جودة حرفية" },
   "footer.2": { fr: "Recettes traditionnelles", en: "Traditional recipes", ar: "وصفات تقليدية" },
   "footer.3": { fr: "Sans conservateurs", en: "No preservatives", ar: "بدون مواد حافظة" },
-  "footer.4": { fr: "Fabrication en Tunisie", en: "Made in Tunisia", ar: "صنع في تونس" }
+  "footer.4": { fr: "Fabrication en Tunisie", en: "Made in Tunisia", ar: "صنع في تونس" },
+  "footer.products": { fr: "Produits", en: "Products", ar: "المنتجات" },
+  "footer.story": { fr: "Notre histoire", en: "Our story", ar: "قصتنا" },
+  "footer.quality": { fr: "Qualité", en: "Quality", ar: "الجودة" },
+  "footer.contact": { fr: "Contact", en: "Contact", ar: "اتصل بنا" }
 };
 
 const SUPPORTED_LANGS = ['fr', 'en', 'ar'];
@@ -193,6 +215,12 @@ function applyLanguage(lang) {
     }
   });
 
+  document.querySelectorAll('[data-i18n-content]').forEach(el => {
+    const key = el.getAttribute('data-i18n-content');
+    const entry = translations[key];
+    if (entry && entry[lang] !== undefined) el.setAttribute('content', entry[lang]);
+  });
+
   document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
     const key = el.getAttribute('data-i18n-aria-label');
     const entry = translations[key];
@@ -207,6 +235,11 @@ function applyLanguage(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
+  document.querySelector('meta[property="og:locale"]').setAttribute('content', {
+    fr: 'fr_TN',
+    en: 'en_TN',
+    ar: 'ar_TN'
+  }[lang]);
 
   try { localStorage.setItem('lelion-lang', lang); } catch (e) {}
 }
@@ -214,7 +247,8 @@ function applyLanguage(lang) {
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     applyLanguage(btn.getAttribute('data-lang'));
-    document.querySelector('.links').classList.remove('open');
+    navLinks.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
   });
 });
 
