@@ -49,7 +49,7 @@ const translations = {
   "trust.1.title": { fr: "Depuis 1908", en: "Since 1908", ar: "منذ 1908" },
   "trust.1.sub": { fr: "Plus d’un siècle de savoir-faire", en: "Over a century of craftsmanship", ar: "أكثر من قرن من الخبرة" },
   "trust.2.title": { fr: "Ingrédients sélectionnés", en: "Selected ingredients", ar: "مكونات مختارة" },
-  "trust.2.sub": { fr: "100% naturels", en: "100% natural", ar: "100% طبيعية" },
+  "trust.2.sub": { fr: "Des ingrédients de qualité", en: "Quality ingredients", ar: "مكونات عالية الجودة" },
   "trust.3.title": { fr: "Qualité premium", en: "Premium quality", ar: "جودة فائقة" },
   "trust.3.sub": { fr: "Goût authentique", en: "Authentic taste", ar: "مذاق أصيل" },
   "trust.4.title": { fr: "Tradition tunisienne", en: "Tunisian tradition", ar: "تقليد تونسي" },
